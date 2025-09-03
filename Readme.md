@@ -2,6 +2,28 @@
 
 A modern, **fully TypeScript** and fully decoupled full-stack application boilerplate featuring a backend and frontend with shared type definitions.
 
+## 🎯 Problems I was looking to solve
+
+This boilerplate addresses several key challenges in modern full-stack development:
+
+### 1. **Type Safety from Backend ↔ Frontend** 🔒
+The biggest challenge was ensuring **complete type safety** between backend and frontend. Traditional approaches often lead to:
+- Manual type duplication and maintenance
+- Runtime errors due to type mismatches
+- Inconsistent API contracts
+- Time-consuming debugging when types drift apart
+
+**Solution**: Automatic type synchronization with a single source of truth (`shared/Types.ts`) that keeps both backend and frontend perfectly in sync.
+
+### 2. **Complete Decoupling for Reusability** 🔄
+Backend endpoints should be reusable across different clients:
+- **Mobile apps** (React Native, Flutter, etc.)
+- **Cron job services** and background workers
+- **Third-party integrations** and webhooks
+- **Multiple frontend applications**
+
+**Solution**: Fully decoupled architecture where the backend is a standalone API service that can be consumed by any client, with shared types ensuring consistent contracts across all consumers.
+
 ## 🏗️ Architecture
 
 This boilerplate is designed with a **fully decoupled architecture** where the backend and frontend are completely independent applications that can be developed, deployed, and scaled separately.
