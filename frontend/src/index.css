@@ -28,9 +28,11 @@ body,
     --text-secondary: #8B949E;
     --text-disabled: #6E7681;
 
-    --accent: #06D6A0;
+    --accent-primary: oklch(0.75 0.18 150);      /* Vibrant teal */
+    --accent-secondary: oklch(0.92 0.16 100);   /* Warm yellow */
+    --accent-success: oklch(0.78 0.17 150);     /* Success green */
+    --accent-danger: oklch(0.68 0.22 25);       /* Strong red */
 }
-
 
 @theme {
     --color-debug-500: oklch(0.72 0.11 178);
